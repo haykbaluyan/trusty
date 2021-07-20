@@ -182,6 +182,7 @@ servers:
       - status
       - workflow
       - martini
+      - fcc
     enable_grpc_gateway: false
     heartbeat_secs: 30
     timeout:

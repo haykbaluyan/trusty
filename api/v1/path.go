@@ -147,3 +147,15 @@ const (
 	// Response: SearchOpenCorporatesResponse
 	PathForMartiniSearchCorps = "/v1/ms/search/opencorporates"
 )
+
+// FCC service API
+const (
+	// PathForFcc is base path to FCC API service
+	PathForFcc = "/v1/fcc"
+
+	// PathForFccFrn is path to get company FRN (Registration Number -CORESID)
+	PathForFccFrn = "/v1/fcc/frn"
+
+	// PathForFccSearchDetail is path to get company details
+	PathForFccSearchDetail = "/v1/fcc/search_detail"
+)

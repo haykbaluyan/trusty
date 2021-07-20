@@ -22,4 +22,8 @@ func TestPaths(t *testing.T) {
 
 	assert.Equal(t, "/v1/wf", v1.PathForWorkflow)
 	assert.Equal(t, "/v1/wf/:provider/repos", v1.PathForWorkflowRepos)
+
+	assert.Equal(t, "/v1/fcc", v1.PathForFcc)
+	assert.Equal(t, "/v1/fcc/frn", v1.PathForFccFrn)
+	assert.Equal(t, "/v1/fcc/search_detail", v1.PathForFccSearchDetail)
 }

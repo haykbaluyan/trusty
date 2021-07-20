@@ -5,6 +5,7 @@ import (
 
 	"github.com/ekspand/trusty/backend/service/auth"
 	"github.com/ekspand/trusty/backend/service/ca"
+	"github.com/ekspand/trusty/backend/service/fcc"
 	"github.com/ekspand/trusty/backend/service/status"
 	"github.com/ekspand/trusty/backend/service/swagger"
 	"github.com/ekspand/trusty/backend/service/workflow"
@@ -17,6 +18,7 @@ var serviceFactories = map[string]gserver.ServiceFactory{
 	status.ServiceName:   status.Factory,
 	workflow.ServiceName: workflow.Factory,
 	swagger.ServiceName:  swagger.Factory,
+	fcc.ServiceName:      fcc.Factory,
 }
 
 func Test_invalidArgs(t *testing.T) {
